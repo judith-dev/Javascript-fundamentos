@@ -25,8 +25,6 @@ var Alejandro =  {
 
 var personas = [Alvaro, Daniel, Alexys,Rafa, Alejandro, Sofia];
 
-var personasCms  =  personas.map((personas)=>({
- ...personas,
- altura: personas.altura * 100
-}))
-console.log(personasCms);
+var totalLibros =  personas.reduce((total,{cantidadLibros}) =>  total + cantidadLibros,0)
+
+console.log(totalLibros);
